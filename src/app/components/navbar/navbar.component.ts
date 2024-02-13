@@ -6,7 +6,7 @@ import { HeaderComponent } from '../header/header.component';
   standalone: true,
   imports: [HeaderComponent],
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css','/node_modules/font-awesome/css/font-awesome.css']
+  styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
 }

@@ -11,7 +11,7 @@ import { NavbarComponent } from '../../../components/navbar/navbar.component';
   standalone: true,
   imports: [HeaderComponent, MovieCategoryComponent, CommonModule,NavbarComponent],
   templateUrl: './browse.component.html',
-  styleUrls: ['./browse.component.css','/node_modules/font-awesome/css/font-awesome.css']
+  styleUrl:'./browse.component.css'
 })
 export class BrowseComponent implements OnInit {
   constructor(private loginService: LoginService, private router: Router, private movieServices: MovieServicesService) { }
