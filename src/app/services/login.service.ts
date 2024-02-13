@@ -6,15 +6,12 @@ import { Injectable } from '@angular/core';
 export class LoginService {
 
   constructor() { }
-
+  loggedIn:boolean = false
   login(email:string,password:string){
-      localStorage.setItem("token",email)
+      this.loggedIn = true
   }
 
   isLoggedIn():boolean{
-    if(localStorage.getItem("token")){
-      return true
-    }
-    return false
+    return this.loggedIn
   }
 }

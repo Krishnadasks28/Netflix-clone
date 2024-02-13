@@ -9,5 +9,4 @@ import { HeaderComponent } from '../header/header.component';
   styleUrls: ['./navbar.component.css','/node_modules/font-awesome/css/font-awesome.css']
 })
 export class NavbarComponent {
-  userName:any = localStorage.getItem("token")
 }
