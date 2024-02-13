@@ -1,0 +1,23 @@
+<div class="h-screen" style="background-image: url('/assets/images/background-img.jpg');">
+    <app-header></app-header>
+    <div class="login-container" style="padding-top: 50px;">
+        <form action="" (ngSubmit)="onSubmit()">
+            <div class="login-card">
+                <h1 class="text-white text-3xl pb-4 font-bold">Sign In</h1>
+                <div class="form-field">
+                    <input type="text" class="input" name="email" [(ngModel)]="email" placeholder="Email or phonenumber">
+                </div>
+                <div class="form-field">
+                    <input type="password" class="input" name="password" [(ngModel)]="password" placeholder="Password">
+                </div>
+                <div class="action-field">
+                    <button class="text-white bg-red-700 font-bold py-2 px-4 rounded text-xl" style="width: 100%;">Sign In</button>
+                </div>
+    
+                <div class="text-white flex justify-center pt-3 hover:underline">
+                    <a href="#">Forgot email or phone number?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>  

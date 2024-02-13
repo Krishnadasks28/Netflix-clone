@@ -1,0 +1,14 @@
+@if(movie){
+    <div class=" rounded shadow-lg movie-card">
+        <img class="w-52" [src]="'https://image.tmdb.org/t/p/original'+movie.poster_path" alt="Sunset in the mountains">
+        <div class="px-6 w-52 py-4">
+            <div class="font-bold text-xl text-white mb-2">{{movie.title}}</div>
+            <p class=" text-white text-base">
+                {{movie.release_date}}
+            </p>
+        </div>
+    </div>
+}
+@else{
+    <div class="text-white">Loading.....</div>
+}

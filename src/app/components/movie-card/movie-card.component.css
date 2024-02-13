@@ -1,0 +1,14 @@
+.movie-poster{
+    width: 400px;
+    height: 400px;
+}
+
+.movie-card{
+    cursor: pointer;
+}
+
+.movie-card:hover{
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+
+}

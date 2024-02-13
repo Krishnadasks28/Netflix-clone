@@ -1,0 +1,32 @@
+<div class="browse-page">
+    <app-navbar></app-navbar>
+    
+
+    @if(bannerMovie){
+        <div class="banner">
+            <img class="banner-img" [src]="'https://image.tmdb.org/t/p/original'+bannerMovie.backdrop_path" alt="">
+            <div class="banner-info" style="width: 45%;">
+                <h4 class="text-3xl font-bold">{{bannerMovie.title}} ({{bannerMovie.release_date}})</h4>
+                <p class="text-xl">{{bannerMovie.overview}}</p>
+    
+                <div class="banner-action mt-4">
+                    <button class="play-btn">Play</button>
+                    <button class="info-btn">More info</button>
+                </div>
+            </div>
+        </div>
+    }
+    @else{
+        <div class="text-white">Loading.....</div>
+    }
+    
+
+    <div class="movie-categories">
+        <app-movie-category [title]="'Trending'" [movieList]="movieList"></app-movie-category>
+        <app-movie-category [title]="'New Releases'" [movieList]="nowPlaying"></app-movie-category>
+        <app-movie-category [title]="'Up Coming'" [movieList]="upcoming"></app-movie-category>
+
+
+
+    </div>
+</div>
